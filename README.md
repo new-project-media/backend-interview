@@ -2,21 +2,17 @@
 
 ## Setup
 
-Start dependencies:
+Build and run:
 
-`docker compose up --build`
+```
+docker compose up --build
+```
 
-Install packages:
-
-`npm install`
-
-Run:
-
-`npm start`
+Edit `src/index.ts` to complete the task, then re-run the command above to test your changes.
 
 ## Task
 
-Implement src/index.js to do the following:
+Implement `src/index.ts` to do the following:
 
 1. Read orders from Postgres.
 
