@@ -2,17 +2,13 @@
 
 ## Setup
 
-Start dependencies:
+Build and run:
 
-`docker compose up --build`
+```
+docker compose up --build
+```
 
-Install packages:
-
-`npm install`
-
-Run:
-
-`npm start`
+Edit `src/index.js` to complete the task, then re-run the command above to test your changes.
 
 ## Task
 
