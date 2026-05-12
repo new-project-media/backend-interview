@@ -3,7 +3,7 @@ import { Client as EsClient } from "@elastic/elasticsearch";
 
 const pg = new PgClient({
   host: process.env.PGHOST,
-  port: process.env.PGPORT,
+  port: Number(process.env.PGPORT),
   user: process.env.PGUSER,
   password: process.env.PGPASSWORD,
   database: process.env.PGDATABASE,
@@ -13,7 +13,7 @@ const es = new EsClient({
   node: process.env.ELASTICSEARCH_URL,
 });
 
-async function main() {
+async function main(): Promise<void> {
   try {
     console.log("Connecting to Postgres...");
     await pg.connect();
