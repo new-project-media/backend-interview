@@ -5,10 +5,18 @@
 Build and run:
 
 ```
-docker compose up --build
+docker compose up --build --attach app
 ```
 
+This starts Postgres and Elasticsearch, then builds and runs the app. Only the app's output is printed.
+
 Edit `src/index.ts` to complete the task, then re-run the command above to test your changes.
+
+To see the Postgres and Elasticsearch logs as well, leave off `--attach app`:
+
+```
+docker compose up --build
+```
 
 ## Task
 
